@@ -4,11 +4,9 @@
 
 The aim is to conduct an experiment which measures the Consistency/Availability for a given datastore in clusters.
 
-First we need to set up a multi-node cluster
-We can do this by specifically targetting a single key/id, and constantly updating its value (with a single Writer).
+First we need to set up a multi-node cluster.
+Then we need to target updates/writes to select keys/storage containers.
 We then want to check the consistency/differences of multiple Readers across different nodes in the cluster.
-
-
 
 If applicable, set up a multi-cluster server for the data-store. (eg: min N=2 nodes)
 
